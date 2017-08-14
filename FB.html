@@ -1,0 +1,736 @@
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0px;
+            background-color: #FFFFFF;
+        }
+
+        header {
+            background-color: #3b5998;
+            border-bottom: 1px solid #133783;
+            height: 82px;
+        }
+
+        .heder-content-bloc {
+            width: 980px;
+            margin: 0px auto 0px auto;
+            display: flex;
+        }
+
+        .email-phone {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            color: white;
+            padding: 14px 10px 5px 0px;
+        }
+
+        .password {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            color: white;
+            padding: 14px 10px 5px 0px;
+            text-align: left;
+        }
+
+        .btn {
+            vertical-align: center;
+            border: none;
+            border: 1px solid #28497e;
+            background: none;
+            background-color: #4368b1;
+            color: #FFFFFF;
+            padding: 2px 6px;
+            border-radius: 2px;
+        }
+
+        .forgot-account {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            color: #9cb4d8;
+            margin: 5px 0 0 0;
+            border: 5px;
+            display: inline-block;
+        }
+
+
+        .Logo {
+            background-image: url(facebook-logo.png);
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 454px;
+            height: 88px;
+            background-size: 35%;
+            flex: 1;
+            background-position: 0 center;
+            padding: 0 0 0 10px;
+        }
+
+        .heder-login-panel {
+            flex: 1;
+            display: flex;
+        }
+
+        .form-field {
+            flex: 1;
+            padding-right: 5px;
+        }
+
+        .form-button {
+            padding-top: 33px;
+        }
+
+        .page-body {
+            background-color: #edf0f5;
+            min-height: 300px;
+        }
+
+        .page-body-content-bloc {
+            min-height: 300px;
+            width: 980px;
+            margin: 0px auto;
+            display: flex;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .page-body-left-bloc {
+            flex: 6;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+
+        .page-body-right-bloc {
+            flex: 4;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .page-body-header-title {
+            text-align: left;
+            font-size: 28px;
+            color: #333;
+            padding-top: 42px;
+            padding-bottom: 24px;
+            margin: 0;
+        }
+
+        .features-1 {
+            display: flex;
+            font-family: Helvetica, Arial, sans-serif;
+            margin-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        .features-1-icon {
+            background-image: url("1.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            min-height: 48px;
+            width: 43px;
+            background-size: 100%;
+            text-align: left;
+            margin: 0 20px 0 0;
+        }
+
+        .features-1-text-bold {
+            font-size: 17px;
+            font-weight: bold
+        }
+
+        .features-1-text-normal {
+            font-size: 15px;
+            font-weight: normal;
+            margin: 0 0 0 5px;
+        }
+
+        .features-2 {
+            display: flex;
+            font-family: Helvetica, Arial, sans-serif;
+            margin-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        .features-2-icon {
+            background-image: url("2.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            min-height: 52px;
+            width: 47px;
+            background-size: 100%;
+            text-align: left;
+            margin: 0 20px 0 0;
+        }
+
+        .features-3 {
+            display: flex;
+            font-family: Helvetica, Arial, sans-serif;
+            margin-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        .features-3-icon {
+            background-image: url("3.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            min-height: 48px;
+            width: 43px;
+            background-size: 100%;
+            text-align: left;
+            margin: 0 20px 0 0;
+        }
+
+        .list-Of-features {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .page-body-login-panel {
+            flex: 3;
+        }
+
+        .footer-language-content-2 {
+            margin: 0px auto 0px auto;
+            display: flex;
+            width: 980px;
+        }
+
+        .footer-content-3 {
+            background-color: #FFFFFF;
+            height: 139px;
+            margin: 0px auto 0px auto;
+            display: flex;
+            width: 980px;
+        }
+
+        .imege {
+            background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/Xdy4V9MQt8k.png);
+            background-position: right;
+            background-repeat: no-repeat;
+            display: inline-block;
+            padding-right: 22px;
+            white-space: pre;
+        }
+
+        .footer-item {
+            /*
+		display: inline-block;
+		width: 20%;
+		*/
+            /*float: right;
+		width: 20%;*/
+            flex: 8;
+        }
+
+        .footer-blocks {
+            flex: 8;
+            display: inline-block;
+            padding-right: 10px;
+            font-size: 12px;
+            font-family: Helvetica, Arial, sans-serif;
+            line-height: 20px;
+        }
+
+        .footer-lengvich {
+            flex: 8;
+            display: inline-block;
+            padding-right: 10px;
+            font-size: 12px;
+            font-family: Helvetica, Arial, sans-serif;
+            line-height: 20px;
+            color: #737373
+        }
+
+        .footer-language-block {
+            margin: auto;
+            width: 980px;
+            padding-top: 8px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        .ul-fl {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        .li-fl-en {
+            float: left;
+            vertical-align: top;
+            padding-left: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .li-fl {
+            float: left;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        .linck {
+            color: #365899;
+        }
+
+        .separation-line {
+            border-top: 1px solid #e9ebee;
+            margin: 6px 0 9px;
+            height: 1px;
+        }
+    </style>
+    <!--  -------------Reg form STYLE-------------  -->
+
+    <style>
+        .right-header {
+            Font-size: 36px;
+            font-weight: bold;
+            margin: 0 0 5px 0;
+        }
+
+        .text-2 {
+            font-size: 19px;
+            font-weight: normal;
+            margin: 0 0 20px 0;
+        }
+
+        .input-box1 {
+            display: flex;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        .input-1 {
+            font-size: 18px;
+            border-color: #bdc7d8;
+            border-radius: 5px;
+            border-width: 1px;
+            padding: 8px 10px;
+            display: inline-block;
+            margin: 0;
+            width: 100%;
+        }
+
+        .input-inline {
+            padding-right: 8px;
+        }
+
+        .birthday-data {
+            display: block;
+            position: relative;
+        }
+
+        .birthday-wrapper {
+            display: inline-block;
+        }
+
+        .text-3 {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 19px;
+            font-weight: normal;
+            margin: 10 0 5px 0;
+        }
+
+        .radio-buttons {
+            border-radius: 4px;
+            border-width: 1px;
+            display: inline-block;
+            padding: 5px 0 5px 4px;
+        }
+
+        .month-box {
+            display: inline-block;
+            font-size: 13px;
+            border: 1px solid #bdc7d8;
+            padding: 5px
+        }
+
+        .day-box {
+            display: inline-block;
+            font-size: 13px;
+            border: 1px solid #bdc7d8;
+            padding: 5px
+        }
+
+        .year-box {
+            display: inline-block;
+            font-size: 13px;
+            border: 1px solid #bdc7d8;
+            padding: 5px
+        }
+
+        .birthday-tex {
+            margin-left: 10px;
+            font-size: 11px;
+            max-width: 150px;
+            color: #365899;
+        }
+
+        .create-account-button {
+            border: none;
+            background: none;
+            margin: 10px 0px;
+            padding: 7px 20px;
+            font-size: 19px;
+            color: #FFFFFF;
+            border-radius: 5px;
+            background: linear-gradient(#67ae55, #578843);
+            background-color: #69a74e;
+            box-shadow: inset 0 1px 1px #a4e388;
+            border: 1px solid;
+            border-color: #3b6e22 #3b6e22 #2c5115;
+        }
+
+        .create-account-button:hover {
+            background: linear-gradient(#79bc64, #578843);
+        }
+
+        .d-p-t {
+            font-size: 11px;
+            width: 316px;
+            color: #777;
+        }
+
+        .create-page {
+            border-top: 1px solid #dddfe2;
+            color: #666;
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 10px;
+            padding-top: 15px;
+        }
+
+        .CR {
+            font-size: 11px;
+             margin: 0px auto 0px auto;
+             width: 980px;
+             font-family: Helvetica, Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="heder-content-bloc">
+
+            <div class="Logo">
+            </div>
+
+            <div class="heder-login-panel">
+                <div>
+                    <div class="form-field">
+                        <div class="email-phone">
+                            Email or Phone
+                        </div>
+                        <input type="email" class="form-input">
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <div class="password">
+                        Password
+                    </div>
+                    <input type="password" class="form-input">
+                    <div>
+                        <a class="Link forgot-account" href="#"> 
+                            Forgotaccount? 
+                            </a>
+                    </div>
+                </div>
+
+                <div class="form-field form-button">
+
+                    <button class="btn">Log in</button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="page-body">
+        <div class="page-body-content-bloc">
+            <div class="page-body-left-bloc">
+                <h2 class="page-body-header-title">
+                    Connect with friends and the <br/> world around you on Facebook.
+                </h2>
+                <ul class="list-Of-features">
+                    <li class="features-1">
+                        <div class="features-1-icon">
+                        </div>
+                        <span class="features-1-text-bold">
+                           See photos and updates 
+                       </span>
+                        <span class="features-1-text-normal">
+                           from friends in News Feed
+                       </span>
+                    </li>
+                    <li class="features-2">
+                        <div class="features-2-icon">
+                        </div>
+                        <span class="features-1-text-bold">
+                        Share what's new
+                       </span>
+                        <span class="features-1-text-normal">
+                           in your life on your Timeline.
+                       </span>
+                    </li>
+                    <li class="features-3">
+                        <div class="features-3-icon">
+                        </div>
+                        <span class="features-1-text-bold"> Find more 
+                          </span>
+                        <span class="features-1-text-normal">
+                              of what you're looking for with Facebook Search.
+                          </span>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="page-body-right-bloc">
+
+                <!-- ------Reg form----------   -->
+
+                <h2 class="right-header">
+                    Sign Up
+                </h2>
+                <div class="text-2">
+                    It’s free and always will be.
+                </div>
+                <div class="input-box1">
+                    <div class="input-inline">
+                        <input class="input-1" type="text" placeholder="First name">
+                    </div>
+                    <div>
+                        <input class="input-1" type="text" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="input-box1">
+                    <input class="input-1" type="text" placeholder="Mobile number or email">
+                </div>
+                <div class="input-box1">
+                    <input class="input-1" type="text" placeholder="New password">
+                </div>
+                <div class="birthday-data">
+                    <div class="text-3">
+                        Birthday
+                    </div>
+                    <span class="birthday-wrapper">
+                    <select class="month-box">
+                    <option value="0" selected="1">Month</option>
+                    <option value="1">Jan</option>
+                    <option value="2">Feb</option>
+                    <option value="3">Mar</option>
+                    <option value="4">Apr</option>
+                    <option value="5">May</option>
+                    <option value="6">Jun</option>
+                    <option value="7">Jul</option>
+                    <option value="8">Aug</option>
+                    <option value="9">Sep</option>
+                    <option value="10">Oct</option>
+                    <option value="11">Nov</option>
+                    <option value="12">Dec</option>
+                </select>
+                <select class="day-box">
+                    <option value="0" selected="1">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                
+                <select class="year-box">
+                     <option value="0" selected="1">Year</option>
+                     <option value="2017">2017</option>
+                     <option value="2016">2016</option>
+                     <option value="2015">2015</option>
+                     <option value="2014">2014</option>
+                     <option value="2013">2013</option>
+                     <option value="2012">2012</option>
+                     <option value="2011">2011</option>
+                     <option value="2010">2010</option>
+                     <option value="2009">2009</option>
+                     <option value="2008">2008</option>
+                     <option value="2007">2007</option>
+                     <option value="2006">2006</option>
+                     <option value="2005">2005</option>
+                 </select>
+                 </span>
+                    <a class="birthday-tex" href="#">
+                Why do I need to provide my <br/> birthday?
+            </a>
+                </div>
+                <div class="radio-buttons">
+                    <span data-type="radio">
+                    <span> 
+                <input type="radio" name "sex">
+                <label> Female
+                <span> 
+                    <input type="radio" name="sex">
+                    <label> Male
+                </span>
+                    </span>
+                    </span>
+                </div>
+                <div class="data-policy-text">
+                    <p class="d-p-t">
+                        By clicking Create Account, you agree to our
+                        <a href="#">
+                        Terms 
+                    </a> "and that you have read our"
+                        <a href="#">
+                        Data Policy  
+                         </a> ", including our"
+                        <a href="#">
+                        Cookie Use
+                        </a> ". You may receive SMS Notifications from Facebook and can opt out at
+                        any time."
+                    </p>
+                </div>
+                <div>
+                    <button class="create-account-button">
+                        Create Account
+                    </button>
+                </div>
+
+                <div class="create-page">
+                    <a href="https://www.facebook.com/pages/create/?ref_type=registration_form">
+                    Create a Page
+                    </a> "for a celebrity, band or business."
+                </div>
+
+                <!-- ------Reg form::END-----   -->
+
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer-language">
+            <div class="footer-language-block">
+                <ul class="ul-fl">
+                    <li class="li-fl-en">
+                        <a class="linck" href="#">English (US)</a><br/>
+                    </li>
+                    <li class="li-fl">
+                        <a class="linck" href="#">Українська </a><br/>
+                    </li>
+                    <li class="li-fl">
+                        <a class="linck" href="#">Русский</a><br/>
+                    </li>
+                    <li class="li-fl">
+                        <a class="linck" href="#">Magyar</a>
+                    </li>
+                    <li class="li-fl">
+                        <a class="linck" href="#">العربية</a>
+                    </li>
+                    <li class="li-fl">
+                        <a dir="linck" href="#">Français (France)</a>
+                    </li>
+                    <li class="li-fl">
+                        <a dir="linck" href="#">Türkçe </a>
+                    </li>
+                    <li class="li-fl">
+                        <a class="linck" href="#">Tiếng Việt</a>
+                    </li>
+                    <li class="li-fl">
+                        <a class="linck" href="#">Polski</a>
+                    </li>
+                    <li class="li-fl">
+                        <a class="linck" href="#">Español</a>
+                    </li>
+                    <li class="li-fl">
+                        <a class="linck" href="#">Português (Brasil)</a>
+                    </li>
+                </ul>
+                <div class="separation-line">
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer-content-3">
+            <div class="footer-blocks">
+                <a class="linck" href="#">Sign Up</a><br/>
+                <a class="linck" href="#">Celebrities</a><br/>
+                <a class="linck" href="#">Privacy</a>
+            </div>
+            <div class="footer-blocks">
+                <a class="linck" href="#">Log In</a>
+                <a class="linck" href="#">Marketplace</a>
+                <a class="linck" href="#">Cookies</a>
+            </div>
+            <div class="footer-blocks">
+                <a class="linck" href="#">Messenger</a>
+                <a class="linck" href="#">Groups</a><br/>
+                <a class="linck" href="#">Ad Choices</a>
+            </div>
+            <div class="footer-blocks">
+                <a class="linck" href="#">Facebook Lite</a>
+                <a class="linck" href="#">Recipes</a>
+                <a class="linck" href="#">Terms</a>
+            </div>
+            <div class="footer-blocks">
+                <a class="linck" href="#">Mobile</a>
+                <a class="linck" href="#">Moments</a><br/>
+                <a class="linck" href="#">Help</a>
+            </div>
+            <div class="footer-blocks">
+                <a class="linck" href="#">Find Friends</a>
+                <a class="linck" href="#">Instagram</a>
+            </div>
+            <div class="footer-blocks">
+                <a class="linck" href="#">People</a><br/>
+                <a class="linck" href="#">About</a>
+            </div>
+            <div class="footer-blocks">
+                <a class="linck" href="#">Pages</a><br/>
+                <a class="linck" href="#">Create Ad</a>
+            </div>
+            <div class="footer-blocks">
+                <a class="linck" href="#">Places</a><br/>
+                <a class="linck imege" href="#">Create Page </a>
+            </div>
+            <div class="footer-blocks">
+                <a class="linck" href="#">Games</a>
+                <a class="linck" href="#">Developers</a>
+            </div>
+            <div class="footer-blocks">
+                <a class="linck" href="#">Locations</a>
+                <a class="linck" href="#">Careers</a>
+            </div>
+        </div>
+        <div class="CR"><span> Facebook © 2017</span>
+        </div>
+
+    </footer>
+</body>
+
+</html>
